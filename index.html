@@ -1,11 +1,69 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Shawn Henrie - WDD 231 - Web Frontend Development I</title>
+    <meta name="description" content="WDD 231 - Web Frontend Development I - Shawn Henrie - Course Home Page">
+    <meta name="author" content="Shawn Henrie">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Chakra+Petch:ital,wght@0,300;0,600;1,400&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+    </style>
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="styles/larger.css">
+    <script src="scripts/getDates.js" defer></script>
 </head>
+
 <body>
-    <h1>Hello</h1>
+    <header>
+        <img src="images/profile.jpg" alt="Picture of Me">
+        <span>Shawn I. Henrie Jr.</span>
+        <button id="menu"></button>
+    </header>
+    <nav>
+        <a id="active" href="index.html">Home</a>
+        <a href="">Chamber</a>
+        <a href="">GitHub Profile</a>
+        <a href="www.linkedin.com/in/shawn-henrie-jr">LinkedIn</a>
+    </nav>
+    <main>
+        <h1>Home</h1>
+        <section class="section" id="coursework">
+            <h2>Course Work</h2>
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </section>
+        <section class="section" id="place">
+            <h2>Boise, Idaho</h2>
+            <img src="images/boise-temple.jpg" alt="Boise Temple">
+            <span>Boise Temple</span>
+        </section>
+        <section class="section" id="certificate">
+            <h2>Web and Computer Programming Certificate</h2>
+            <section class="buttons">
+                <button id="all">All</button>
+                <button id="cse">CSE</button>
+                <button id="wdd">WDD</button>
+            </section>
+            <section id="courses">
+                <div id="cse110">CSE 110</div>
+                <div id="wdd130">WDD 130</div>
+                <div id="cse111">CSE 111</div>
+                <div id="cse210">CSE 210</div>
+                <div id="wdd131">WDD 131</div>
+                <div id="wdd231">WDD 231</div>
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>&copy;<span id="year"></span> | Shawn Henrie Jr. | ID, USA</p>
+        <p id="lastModified"></p>
+    </footer>
 </body>
+
 </html>

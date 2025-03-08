@@ -1,0 +1,181 @@
+:root {
+    --background-color: #0D1321;
+    --color1: #FFFC31;
+    --color2: #51D6FF;
+    --accent1: #8980F5;
+    --accent2: #DAB785;
+
+}
+
+body {
+    max-width: 500px;
+    padding: .1rem;
+}
+
+.chakra-petch-light {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+}
+
+.chakra-petch-regular-italic {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: var(--color1);
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+
+header {
+    background-color: var(--background-color);
+    color: var(--color1);
+}
+
+header img {
+    padding-top: 1rem;
+}
+
+header img,
+header span {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header span {
+    text-align: center;
+    padding: 10px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 2rem;
+}
+
+nav {
+    display: none;
+}
+
+nav.open {
+    display: block;
+}
+
+nav a {
+    background-color: var(--background-color);
+    color: var(--color2);
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.5em;
+    display: block;
+}
+
+#active {
+    background-color: var(--accent1);
+    color: var(--background-color);
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+main h1 {
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+
+}
+
+.section {
+    display: block;
+    color: var(--accent2);
+    margin-top: 1rem;
+}
+
+.section h2 {
+    background-color: var(--background-color);
+    padding: 1rem;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+
+.section span {
+    color: var(--background-color);
+}
+
+#place img {
+    display: block;
+    margin: 0 auto 0.5rem auto;
+}
+
+#place span {
+    display: block;
+    background-color: var(--background-color);
+    color: var(--accent1);
+    padding: 1rem;
+    text-align: center;
+    margin-top: .5rem;
+}
+
+#courses {
+    margin-top: 1rem;
+}
+
+#courses div {
+    display: block;
+    background-color: var(--background-color);
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    text-align: center;
+    margin: .3rem 5% .3rem 5%;
+    padding: 1rem;
+    font-size: 1.5rem;
+}
+
+.buttons {
+    font-size: 1.5rem;
+    background-color: var(--background-color);
+}
+
+#all,
+#cse,
+#wdd {
+    width: 28%;
+    margin: 1rem auto 1rem auto;
+    border: 0;
+    background: none;
+    background-color: var(--color1);
+    margin-left: .5rem;
+    margin-right: .5rem;
+}
+
+#all {
+    margin-left: 1rem;
+}
+
+footer {
+    background-color: var(--background-color);
+    color: var(--accent1);
+    padding: 1rem;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.5rem;
+
+}
