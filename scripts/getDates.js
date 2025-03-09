@@ -93,3 +93,43 @@ const courses = [
     }
 ]
 
+
+const courseList = document.querySelector('#courses');
+const createCourses = (courses) => {
+
+    courses.forEach((course) => {
+        let span = document.createElement('span');
+
+        span.textContent = `${course.subject}${course.number}`;
+
+        if (course.completed == true) {
+            span.textContent = `Completed - ${course.subject}${course.number}`;
+        }
+
+        courseList.appendChild(span);
+
+
+    });
+
+}
+
+const all = document.querySelector('#all');
+const cse = document.querySelector('#cse');
+const wdd = document.querySelector('#wdd');
+
+all.addEventListener('click', () => {
+    courseList.innerHTML = '';
+    createCourses(courses);
+});
+
+cse.addEventListener('click', () => {
+    courseList.innerHTML = '';
+    let cseCourses = courses.filter(course => course.subject == 'CSE');
+    createCourses(cseCourses);
+});
+
+wdd.addEventListener('click', () => {
+    courseList.innerHTML = '';
+    let wddCourses = courses.filter(course => course.subject == 'WDD');
+    createCourses(wddCourses);
+});
