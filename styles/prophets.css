@@ -1,0 +1,33 @@
+:root {
+    --backgroundcolor1: #44A1A0;
+    --color1: #D1EFB5;
+    --color2: #212227;
+}
+
+header {
+    text-align: center;
+}
+
+#cards section {
+    display: block;
+    background-color: var(--backgroundcolor1);
+    text-align: center;
+    color: var(--color2);
+    width: 320px;
+    padding-bottom: .5rem;
+    margin: .5rem;
+}
+
+#cards img {
+    display: block;
+    border: 2px solid black;
+    max-width: 90%;
+    margin: .5rem auto .5rem auto;
+
+}
+
+
+#cards {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+}
