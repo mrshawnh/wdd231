@@ -1,0 +1,60 @@
+{
+    "members": [
+        {
+            "name": "Matimtim Marketing",
+            "address": "Boac, Marinduque, Philippines",
+            "website": "https://www.facebook.com/Matimtimmarketing/",
+            "phone": "0969 434 5853",
+            "membership": "Gold",
+            "logo": "https://mrshawnh.github.io/wdd231/chamber/images/matimtim.webp"
+        },
+        {
+            "name": "Marelco Employees Assn",
+            "address": "Boac, Marinduque, Philippines",
+            "website": "https://marelco.org.ph/",
+            "phone": "042 332 2266",
+            "membership": "Bronze",
+            "logo": "https://mrshawnh.github.io/wdd231/chamber/images/marelco.webp"
+        },
+        {
+            "name": "Collens Homemade Peanut Butter",
+            "address": "Santa Cruz, Marinduque, Philippines",
+            "website": "https://www.facebook.com/collenshomemadepurepeanutbutter/",
+            "phone": "0970 127 8590",
+            "membership": "Silver",
+            "logo": "https://mrshawnh.github.io/wdd231/chamber/images/collens.webp"
+        },
+        {
+            "name": "MarinduqueLand Corp",
+            "address": "Gasan, Marinduque, Philippines",
+            "website": "https://marinduqueland.com/",
+            "phone": "123 456 7890",
+            "membership": "NP",
+            "logo": "https://mrshawnh.github.io/wdd231/chamber/images/marinduqueland.webp"
+        },
+        {
+            "name": "Philippine Ports Authority",
+            "address": "Mogpog, Marinduque, Philippines",
+            "website": "https://www.ppa.com.ph/",
+            "phone": "555 555 5555",
+            "membership": "Gold",
+            "logo": "https://mrshawnh.github.io/wdd231/chamber/images/balanacan.webp"
+        },
+        {
+            "name": "Brewista Coffee PH",
+            "address": "Santa Cruz, Marinduque, Philippines",
+            "website": "https://www.facebook.com/brewistacoffeeph/",
+            "phone": "098 765 4321",
+            "membership": "Bronze",
+            "logo": "https://mrshawnh.github.io/wdd231/chamber/images/brewista.webp"
+        },
+        {
+            "name": "Marinduque State University",
+            "address": "Boac, Marinduque, Philippines",
+            "website": "https://www.mscmarinduque.edu.ph/",
+            "phone": "042 332 2028",
+            "membership": "NP",
+            "logo": "https://mrshawnh.github.io/wdd231/chamber/images/msu.webp"
+        }
+    ]
+}
