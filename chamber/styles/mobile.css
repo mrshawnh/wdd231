@@ -1,0 +1,153 @@
+:root {
+    --background-color: #03120E;
+    --color1: #A6B1E1;
+    --color2: #14248A;
+    --accent1: white;
+    --font: "Roboto", sans-serif;
+    --weight-header: 400;
+    --weight-text: 100;
+}
+
+body {
+    width: 320px;
+    padding: .1rem;
+}
+
+header {
+    background-color: var(--background-color);
+}
+
+.logo {
+    display: block;
+    background-color: var(--background-color);
+    padding: .4rem;
+}
+
+.logo img {
+    display: block;
+    margin: .3rem;
+    padding-top: 1rem;
+}
+
+.logo h2 {
+    display: block;
+    color: var(--color1);
+    font-family: var(--font);
+    font-weight: var(--weight-header);
+    position: absolute;
+    top: 1rem;
+    left: 7rem;
+
+}
+
+.logo span {
+    display: block;
+    color: var(--color1);
+    font-family: var(--font);
+    font-weight: var(--weight-header);
+    position: absolute;
+    top: 5rem;
+    left: 7rem;
+}
+
+#menu {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: var(--color1);
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+
+}
+
+#menu::before {
+    content: "☰";
+}
+
+#menu.open::before {
+    content: "❌";
+}
+
+nav {
+    display: none;
+}
+
+nav.open {
+    display: block;
+}
+
+nav a {
+    background-color: var(--background-color);
+    color: var(--color2);
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+nav a:hover {
+    background-color: var(--color2);
+    color: var(--accent1);
+}
+
+.hero-image img {
+    display: block;
+    width: 90%;
+    margin: .1rem 5% .1rem 5%;
+}
+
+main h2 {
+    margin-left: .5rem;
+    color: var(--background-color);
+}
+
+#directory-home {
+    text-align: center;
+}
+
+#directory-home h3 {
+    margin-top: 0;
+    background-color: var(--background-color);
+    color: var(--color1);
+}
+
+#events p {
+    height: 200px;
+}
+
+#directory-home div {
+    border: 3px solid var(--background-color);
+    margin-bottom: .5rem;
+}
+
+#bbuttons button {
+    display: block;
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: var(--color1);
+    background-color: var(--background-color);
+    margin: 0.3rem auto 0 auto;
+    padding: .5rem;
+}
+
+footer {
+    padding: 2rem;
+    padding-bottom: .7rem;
+    margin-top: 2rem;
+    background-color: var(--background-color);
+    color: var(--color1);
+}
+
+#commerce p {
+    margin-top: -1rem;
+}
+
+#project {
+    margin-top: 2rem;
+}
+
+#project p {
+    margin-top: -1rem;
+}

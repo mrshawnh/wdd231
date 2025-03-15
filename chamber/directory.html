@@ -1,18 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Shawn Henrie - WDD 231 - Chamber of Commerce</title>
-    <meta name="description" content="WDD 231 - Web Frontend Development I - Shawn Henrie - Chamber of Commerce Directory Page">
+    <meta name="description"
+        content="WDD 231 - Web Frontend Development I - Shawn Henrie - Chamber of Commerce Directory Page, Boise Idaho">
     <meta name="author" content="Shawn Henrie">
-    <meta property="og:title" content="WDD 231 Home Course Page">
+    <meta property="og:title" content="Chamber of Commerce Directory Page">
     <meta property="og:type" content="website">
     <meta property="og:image"
         content="https://assets.goaaa.com/image/upload/c_fill,g_auto,w_2640,h_1339,q_auto:best/v1647564334/singularity-migrated-images/downtown-boise-idaho-via-magazine-shutterstock_511431187_0.jpg.jpg">
-    <meta property="og:url" content="https://mrshawnh.github.io/wdd231/index.html">
+    <meta property="og:url" content="https://mrshawnh.github.io/wdd231/chamber/directory.html">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/directory.js" defer></script>
 </head>
+
 <body>
-    
+    <header>
+        <section class='logo'>
+            <img src="images/boise-icon.webp" alt="Chamber of Commerce Icon">
+            <h2>Boise</h2>
+            <span>Chamber of Commerce</span>
+            <button id="menu"></button>
+        </section>
+        <nav>
+            <a href="">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="">Join</a>
+            <a href="">Discover</a>
+        </nav>
+    </header>
+    <main>
+        <section class="hero-image">
+            <img src="images/hero-image.webp" alt="Hero Image">
+        </section>
+
+        <h2>Home</h2>
+        <section id="directory-home">
+            <div id="events">
+                <h3>Events</h3>
+                <p></p>
+            </div>
+            <div id="cweather">
+                <h3>Current Weather</h3>
+                <section></section>
+            </div>
+            <div id="fweather">
+                <h3>Weather Forecast</h3>
+                <section>
+                    <span>Today <span id="today"></span></span>
+                    <span><span id="tomorrow"></span> <span id="tomorrowWeather"></span></span>
+                    <span><span id="nextDay"></span> <span id="nextDayWeather"></span></span>
+                </section>
+            </div>
+        </section>
+        <div id="bbuttons">
+            <button id="grid">Grid</button>
+            <button id="list">List</button>
+        </div>
+        <section class="businesses">
+
+        </section>
+    </main>
+    <footer>
+        <section id="commerce">
+            <p>Boise Chamber of Commerce</p>
+            <p>Boise, Idaho</p>
+            <p>boiseCOC@gmail.com</p>
+            <p>(208)555-5555</p>
+        </section>
+        <section id="project">
+            <p>WDD231 Class Project</p>
+            <p>Shawn Henrie</p>
+            <p>&copy;<span id="year"></span> Boise Chamber of Commerce</p>
+            <span id="lastModified"></span>
+        </section>
+    </footer>
 </body>
+
 </html>
