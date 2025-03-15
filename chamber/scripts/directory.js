@@ -15,11 +15,68 @@ hamButton.addEventListener('click', () => {
 
 const gridButton = document.querySelector('#grid');
 const listButton = document.querySelector('#list');
-const businesses = document.querySelector('.businesses');
-const url = 
+const businessGrid = document.querySelector('#businessGrid');
+const businessList = document.querySelector('#businessList');
+const url = "data/members.json"
 
-async function getBusinessData(){
-    const response
+async function getBusinessData() {
+    const response = await fetch(url);
+    const data = await response.json();
+    console.log(data);
+
+
+
+    gridButton.addEventListener('click', () => {
+        displayGrid(data.businesses);
+    });
+
+    listButton.addEventListener('click', () => {
+        displayList(data.businesses);
+    });
+
+
+
+
 
 }
-const createGrid = (data)
+
+
+
+
+const displayGrid = (data) => {
+    businessList.innerHTML = '';
+    data.forEach((business) => {
+        let div = document.createElement('div');
+
+        div.innerHTML = `
+            <h1>${business.name}</h1>
+            <p>${business.address}</p>
+            <p>${business.number}</p>
+            <img src="${business.image}" alt=${business.name}>
+            <a href="${business.url}">${business.url}</a>
+        `;
+
+        businessGrid.appendChild(div);
+    });
+};
+
+getBusinessData();
+
+const displayList = (data) => {
+    businessGrid.innerHTML = '';
+    data.forEach((business) => {
+        let table = document.createElement('div');
+
+        table.innerHTML = `
+            <div>${business.name}</div>
+            <div>${business.address}</div>
+            <div>${business.number}</div>
+            <div>${business.url}</div>
+        `
+        businessList.appendChild(table);
+
+
+    });
+}
+
+

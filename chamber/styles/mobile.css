@@ -151,3 +151,53 @@ footer {
 #project p {
     margin-top: -1rem;
 }
+
+#businessGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+}
+
+#businessGrid div {
+    display: block;
+    height: 250px;
+    width: 300px;
+    text-align: center;
+    border: 1px solid var(--color2);
+    margin: 1rem auto 0 auto;
+
+}
+
+#businessGrid h1 {
+    margin-top: 0;
+    background-color: var(--background-color);
+    color: var(--color1);
+}
+
+#businessGrid img {
+    display: block;
+    margin: 0 auto 0 auto;
+    height: 45px;
+}
+
+#businessGrid a {
+    display: block;
+    margin-bottom: .3rem;
+}
+
+#businessList {
+    display: flex;
+    flex-direction: column;
+}
+
+#businessList div {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 1rem auto 0 auto;
+    padding: 0.25rem;
+    text-align: center;
+}
+
+#businessList div:nth-child(even) {
+    background-color: var(--background-color);
+    color: var(--color1);
+}
