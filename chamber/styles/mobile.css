@@ -94,7 +94,8 @@ nav a:hover {
 .hero-image img {
     display: block;
     width: 90%;
-    margin: .1rem 5% .1rem 5%;
+    height: 450px;
+    margin: .1rem 5% .5rem 5%;
 }
 
 main h2 {
@@ -200,4 +201,17 @@ footer {
 #businessList div:nth-child(even) {
     background-color: var(--background-color);
     color: var(--color1);
+}
+
+#cweather {
+    font-family: var(--font);
+    font-weight: var(--weight-header);
+}
+
+#fweather span {
+    display: block;
+    margin: .3rem auto 0 auto;
+    font-family: var(--font);
+    font-weight: var(--weight-header);
+
 }
