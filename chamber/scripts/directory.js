@@ -36,11 +36,7 @@ async function getBusinessData() {
 
 
 
-
-
 }
-
-
 
 
 const displayGrid = (data) => {
@@ -172,7 +168,22 @@ function displayForecastResults(data) {
 
 };
 
+
 //spotlight code
 
+async function getSpotlightData() {
+    const response = await fetch(url);
+    const data = await response.json();
+    const levelList = [];
+
+    let sortedBusinesses = data.businesses.filter(business => business.level = 2);
 
 
+    sortedBusinesses.forEach((business) => {
+        levelList.push(business);
+    });
+
+    console.log(levelList);
+}
+
+getSpotlightData();
