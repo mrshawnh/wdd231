@@ -168,6 +168,15 @@ main h1 {
     margin-left: 1rem;
 }
 
+#courses p {
+    text-align: center;
+    font-family: "Chakra Petch", sans-serif;
+    font-weight: 300;
+    font-style: normal;
+    font-size: 1.5rem;
+    color: var(--background-color);
+}
+
 footer {
     background-color: var(--background-color);
     color: var(--accent1);

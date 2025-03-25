@@ -106,11 +106,27 @@ const createCourses = (courses) => {
             span.textContent = `Completed - ${course.subject}${course.number}`;
         }
 
+
+
         courseList.appendChild(span);
-
-
     });
 
+
+
+
+
+
+};
+
+const getSum = (credits) => {
+    let num = [];
+    credits.forEach((course) => {
+        num.push(course.credits);
+    });
+    const sum = num.reduce((accumulator, currentValue) => accumulator + currentValue, 0);
+    let p = document.createElement('p');
+    p.textContent = `Credits: ${sum}`;
+    courseList.appendChild(p);
 }
 
 const all = document.querySelector('#all');
@@ -120,16 +136,19 @@ const wdd = document.querySelector('#wdd');
 all.addEventListener('click', () => {
     courseList.innerHTML = '';
     createCourses(courses);
+    getSum(courses);
 });
 
 cse.addEventListener('click', () => {
     courseList.innerHTML = '';
     let cseCourses = courses.filter(course => course.subject == 'CSE');
     createCourses(cseCourses);
+    getSum(cseCourses);
 });
 
 wdd.addEventListener('click', () => {
     courseList.innerHTML = '';
     let wddCourses = courses.filter(course => course.subject == 'WDD');
     createCourses(wddCourses);
+    getSum(wddCourses);
 });
