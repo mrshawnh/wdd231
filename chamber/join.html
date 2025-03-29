@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shawn Henrie - WDD 231 - Chamber of Commerce</title>
+    <meta name="description"
+        content="WDD 231 - Web Frontend Development I - Shawn Henrie - Chamber of Commerce Join Page, Boise Idaho">
+    <meta name="author" content="Shawn Henrie">
+    <meta property="og:title" content="Chamber of Commerce Join Page">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://assets.goaaa.com/image/upload/c_fill,g_auto,w_2640,h_1339,q_auto:best/v1647564334/singularity-migrated-images/downtown-boise-idaho-via-magazine-shutterstock_511431187_0.jpg.jpg">
+    <meta property="og:url" content="https://mrshawnh.github.io/wdd231/chamber/join.html">
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="styles/large.css">
+    <script src="scripts/join.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <section class='logo'>
+            <img src="images/boise-icon.webp" alt="Chamber of Commerce Icon">
+            <h2>Boise</h2>
+            <span>Chamber of Commerce</span>
+            <button id="menu"></button>
+        </section>
+        <nav>
+            <a href="index.html">Home</a>
+            <a href="directory.html">Directory</a>
+            <a href="join.html">Join</a>
+            <a href="">Discover</a>
+        </nav>
+    </header>
+    <main id="join-main">
+        <h1>Join the Boise, Idaho Chamber of Commerce Page</h1>
+        <form action="thanks.html" method="get" class="joinForm">
+            <fieldset>
+                <label>First Name* <input type="text" name="fname" required id="fname"></label>
+                <label>Last Name* <input type="text" name="lname" required id="lname"></label>
+                <label>Job Title/Position <input type="text" name="jobTitle" id="jobTitle"
+                        pattern="[A-Za-z]{7,}"></label>
+                <label>Email Address* <input type="email" name="email" id="email"
+                        placeholder="someone@gmail.com"></label>
+                <label>Phone Number* <input type="tel" name="phone" id="phone" required
+                        placeholder="1230001234"></label>
+                <div>Membership Level</div>
+                <label><input type="radio" name="membership" id="membership" value="bronze">Bronze Membership</label>
+                <label><input type="radio" name="membership" id="membership" value="silver">Silver Membership</label>
+                <label><input type="radio" name="membership" id="membership" value="gold">Gold Membership</label>
+                <label><input type="radio" name="membership" id="membership" value="NP">NP Membership</label>
+                <div>Enter short business/organiztion description</div>
+                <label><textarea name="description" id="description" rows="20" cols="55"
+                        placeholder="Business/Organization description"></textarea></label>
+                <label><input type="hidden" name="timestamp" id="timestamp"></label>
+                <label><input type="submit" value="Join Page"></label>
+            </fieldset>
+        </form>
+        <div class="membership-levels">
+            <div>
+                <h2>Bronze Memebership</h2>
+
+                <button id="button1">More Info</button>
+            </div>
+            <div>
+                <h2>Silver Memebership</h2>
+
+                <button id="button2">More Info</button>
+            </div>
+            <div>
+                <h2>Gold Memebership</h2>
+                <button id="button3">More Info</button>
+            </div>
+            <div>
+                <h2>NP Membership</h2>
+                <p></p>
+                <button id="button4">More Info</button>
+            </div>
+        </div>
+        <dialog id="mydialog">
+            <p></p>
+            <button id="closeButton">X</button>
+        </dialog>
+    </main>
+
+    <footer>
+        <section id="commerce">
+            <p>Boise Chamber of Commerce</p>
+            <p>Boise, Idaho</p>
+            <p>boiseCOC@gmail.com</p>
+            <p>(208)555-5555</p>
+        </section>
+        <section id="project">
+            <p>WDD231 Class Project</p>
+            <p>Shawn Henrie</p>
+            <p>&copy;<span id="year"></span> Boise Chamber of Commerce</p>
+            <span id="lastModified"></span>
+        </section>
+    </footer>
+</body>
+
+</html>

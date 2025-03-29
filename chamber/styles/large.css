@@ -56,4 +56,15 @@
         margin: 0.3rem auto 0 auto;
     }
 
+
+    /* join.html large css */
+
+    #join-main {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #join-main h1 {
+        grid-column: 1/3;
+    }
 }

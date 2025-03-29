@@ -1,0 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
+#mydialog div {
+    display: grid;
+    grid-template-columns: auto 44px;
+    background-color: #ddd;
+    padding: 5px;
+    border-bottom: #aaa 1px solid;
+}
