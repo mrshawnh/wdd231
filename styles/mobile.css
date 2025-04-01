@@ -24,14 +24,21 @@ body {
     font-style: italic;
 }
 
+
+/* header */
+
 #menu {
-    font-size: 1.5rem;
-    border: 0;
+    font-size: 2rem;
+    border: none;
     background: none;
     color: var(--color1);
+    cursor: pointer;
+    width: 100%;
+    text-align: right;
     position: absolute;
     right: 1rem;
     top: 1rem;
+    padding: .35rem;
 }
 
 header {
@@ -72,7 +79,7 @@ nav a {
     color: var(--color2);
     text-align: center;
     text-decoration: none;
-    padding: 10px;
+    padding: 1rem 2vw;
     font-family: "Chakra Petch", sans-serif;
     font-weight: 400;
     font-style: italic;
@@ -86,12 +93,15 @@ nav a {
 }
 
 #menu::before {
-    content: "☰";
+    content: '\2630';
 }
 
 #menu.open::before {
-    content: "❌";
+    content: "X";
+    color: red;
 }
+
+/* main */
 
 main h1 {
     font-family: "Chakra Petch", sans-serif;
