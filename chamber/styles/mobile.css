@@ -79,11 +79,16 @@ nav.open {
 
 nav a {
     background-color: var(--background-color);
-    color: var(--color2);
+    color: var(--color1);
     text-align: center;
     text-decoration: none;
     padding: 10px;
     display: block;
+}
+
+nav a.active {
+    background-color: var(--color1);
+    color: var(--color2);
 }
 
 nav a:hover {
@@ -96,6 +101,12 @@ nav a:hover {
     width: 90%;
     height: 450px;
     margin: .1rem 5% .5rem 5%;
+}
+
+.hero-image button {
+    display: block;
+    margin: .5rem auto .5rem auto;
+
 }
 
 main h2 {
@@ -120,6 +131,10 @@ main h2 {
 #directory-home div {
     border: 3px solid var(--background-color);
     margin-bottom: .5rem;
+}
+
+#events li {
+    list-style-type: none;
 }
 
 #bbuttons button {
@@ -299,4 +314,38 @@ footer {
     }
 }
 
-/* thanks.html css */
+/* discover.html */
+
+#interests {
+    display: grid;
+    grid-template-columns: 1fr;
+}
+
+#interests div,
+#interests button {
+    display: block;
+    margin: .5rem auto 0 auto;
+}
+
+#interests div {
+    border: 5px solid var(--background-color);
+    background-color: var(--background-color);
+}
+
+#interests button {
+    background: none;
+    border: 0;
+    color: var(--color1);
+    cursor: pointer;
+}
+
+#interests img {
+    height: 200px;
+    width: 300px;
+}
+
+#mydialog button {
+    border: 0;
+    cursor: pointer;
+    background-color: white;
+}

@@ -187,3 +187,7 @@ async function getSpotlightData() {
 }
 
 getSpotlightData();
+
+const joinus = document.querySelector('.hero-image button');
+
+joinus.addEventListener('click', () => { window.open('https://mrshawnh.github.io/wdd231/chamber/join.html') });

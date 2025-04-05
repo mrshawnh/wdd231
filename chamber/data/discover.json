@@ -1,0 +1,52 @@
+{
+    "places": [
+        {
+            "name": "Idaho Military History Museum",
+            "address": "4692 W Harvard St, Boise, ID 83705",
+            "description": "Indoor-outdoor museum exhibiting historic military vehicles, guns, flight gear & medals.",
+            "image": "images/military-museum.webp"
+        },
+        {
+            "name": "Zoo Boise",
+            "address": "355 Julia Davis Dr, Boise, ID 83702",
+            "description": "A wide array of animal exhibits, with an African boat ride, kids' farm, butterfly area & food/drink.",
+            "image": "images/zoo.webp"
+        },
+        {
+            "name": "The Peregrine Fund's World Center For Birds of Prey",
+            "address": "5668 W Flying Hawk Ln, Boise, ID 83709",
+            "description": "Indoor/outdoor center dedicated to birds of prey, with live falcons, eagles, vultures, hawks & owls.",
+            "image": "images/birds.webp"
+        },
+        {
+            "name": "Barber Park",
+            "address": "4049 S Eckert Rd, Boise, ID 83716",
+            "description": "Riverfront park known for rafting has trails with wildlife views, an education center & playground.",
+            "image": "images/barber-park.webp"
+        },
+        {
+            "name": "Old Idaho Penitentiary Site",
+            "address": "2445 Old Penitentiary Rd, Boise, ID 83712",
+            "description": "1872 prison features 30 historic buildings with special exhibitions & self-guided walking tours.",
+            "image": "images/penitentiary.webp"
+        },
+        {
+            "name": "Habituehomes-East End Retreat Hot Springs Pool Boise",
+            "address": "731 Hillview Dr, Boise, ID 83712",
+            "description": "This charming 2-bedroom, 1-bath home in Boise's Historic East End features a private hot spring soaking pool with a complimentary 2-hour soak.",
+            "image": "images/springs.webp"
+        },
+        {
+            "name": "Idaho Botanical Garden",
+            "address": "2355 N Old Penitentiary Rd, Boise, ID 83712",
+            "description": "Year-round living museum with self-guided tours through 33 acres of unique native & exotic gardens.",
+            "image": "images/botanical.webp"
+        },
+        {
+            "name": "Discovery Center of Idaho",
+            "address": "131 W Myrtle St, Boise, ID 83702",
+            "description": "Kid-friendly science museum featuring interactive exhibits explaining complex ideas.",
+            "image": "images/discovery.webp"
+        }
+    ]
+}
