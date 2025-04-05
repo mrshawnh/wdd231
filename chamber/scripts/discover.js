@@ -38,6 +38,7 @@ function createCards(data) {
         openButton.innerHTML = 'Learn more';
         photo.src = interest.image;
         photo.alt = interest.name;
+        photo.loading = 'lazy';
 
         openButton.addEventListener('click', () => showInfo(interest));
 
