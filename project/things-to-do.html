@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Project home page</title>
+    <meta name="description"
+        content="WDD 231 - Web Frontend Development I - Shawn Henrie - Tourist's Guide to Torrijos things to do grid display">
+    <meta name="author" content="Shawn Henrie">
+    <meta property="og:title" content="Tourist's Guide to Torrijos - Things to do page">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://en.wikipedia.org/wiki/Torrijos,_Marinduque#/media/File:Ph_locator_marinduque_torrijos.png">
+    <meta property="og:url" content="https://mrshawnh.github.io/wdd231/project/things-to-do.html">
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/things-to-do.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/torrijos-icon.webp" alt="Torrijos Seal" loading="lazy">
+        <h1>Tourist's Guide to Torrijos</h1>
+        <button id="hamburger"></button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a id="active" href="things-to-do.html">Things to do</a></li>
+                <li><a href="travel.html">Travel</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <h1>Things to do</h1>
+        <section id="things-to-do">
+            <dialog>
+                <h2></h2>
+                <p></p>
+                <button id="closebutton"></button>
+            </dialog>
+
+        </section>
+        <section id="weather">
+            <div id="cweather">
+                <h3>Current Weather</h3>
+                <section>
+                    <p>The current temperature in Torrijos, Marinduque is <span id="current-temp"></span></p>
+                    <figure>
+                        <img id="weather-icon" src="" alt="">
+                        <figcaption></figcaption>
+                    </figure>
+                </section>
+            </div>
+            <div id="fweather">
+                <h3>Weather Forecast</h3>
+                <section>
+                    <span><span id="today"></span> <span id="todayWeather"></span></span>
+                    <span><span id="tomorrow"></span> <span id="tomorrowWeather"></span></span>
+                    <span><span id="nextDay"></span> <span id="nextDayWeather"></span></span>
+                </section>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <p>Shawn Henrie</p>
+        <p>&copy;<span id="year"></span> Tourist's Guide to Torrijos</p>
+        <span id="lastModified"></span>
+        <a href="attributions.html">Attributions</a>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+{
+    "vehicles": [
+        {
+            "name": "Bus",
+            "picture": "images/bus.webp",
+            "description": "The best way from the airport to get to Torrijos, is to take the bus to Lucena."
+        },
+        {
+            "name": "Ferry",
+            "picture": "images/ferry.webp",
+            "description": "Once you arrive at the Dalahican, Lucena pier, ferries are available to take you to the isaland of Marinduque."
+        },
+        {
+            "name": "Jeepney",
+            "picture": "images/jeepney.webp",
+            "description": "A couple hours on the ferry, a jeepney will take you to Torrijos, you can get off at the town."
+        },
+        {
+            "name": "Tricycle",
+            "picture": "images/tricycle.webp",
+            "description": "A tricycle is the most common public transportation vehicle that you can take to take you to your hotel, and other short distance places. They are fairly cheap and the drivers are always kind."
+        }
+    ]
+}

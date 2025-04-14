@@ -1,0 +1,278 @@
+:root {
+    --backgroundcolor: #001242;
+    --color1: #F6AE2D;
+    --color2: #F26419;
+    --accent: #9381FF;
+    --bold: 700;
+    --normal: 400;
+    --fontfamily: "Roboto", sans-serif;
+}
+
+
+/* header and footer */
+
+
+header {
+    background-color: var(--backgroundcolor);
+    color: var(--color1);
+    padding: .5rem;
+    font-family: var(--fontfamily);
+    font-weight: var(--bold);
+}
+
+header img {
+    display: block;
+    margin: 1rem .5rem 0 0;
+}
+
+#hamburger {
+    font-size: 1.5rem;
+    border: 0;
+    background: none;
+    color: var(--color1);
+    position: absolute;
+    right: 1rem;
+    top: 1rem;
+}
+
+#hamburger::before {
+    content: "☰";
+}
+
+#hamburger.open::before {
+    content: "❌";
+}
+
+nav {
+    display: none;
+}
+
+nav.open {
+    display: block;
+}
+
+nav ul {
+    background-color: var(--backgroundcolor);
+    color: var(--color1);
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    display: block;
+}
+
+
+nav ul li {
+    list-style-type: none;
+    margin-top: .5rem;
+    margin: 1rem;
+    padding: .5rem;
+}
+
+nav a {
+    color: var(--color2);
+    font-family: var(--fontfamily);
+    font-weight: var(--normal);
+    padding: 1rem;
+    margin: 1rem;
+
+}
+
+nav a:hover {
+    background-color: rgb(255, 255, 255, 0.1);
+}
+
+#active {
+    color: var(--color1);
+}
+
+#active:hover {
+    background-color: rgb(255, 255, 255, 0.1);
+}
+
+footer {
+    background-color: var(--backgroundcolor);
+    color: var(--color1);
+    padding: .5rem;
+    font-family: var(--fontfamily);
+    font-weight: var(--bold);
+}
+
+footer a {
+    display: block;
+    margin-top: 1rem;
+    color: var(--color2);
+}
+
+/* index.html main */
+
+#heroimg {
+    display: block;
+    margin: .1rem auto 1rem auto;
+    width: 85%;
+    border: 3px solid var(--accent);
+}
+
+main h1 {
+    margin: .5rem;
+    font-family: var(--fontfamily);
+    font-weight: var(--bold);
+}
+
+#history {
+    display: block;
+}
+
+#history div {
+    margin: .5rem;
+
+}
+
+#history p {
+    background-color: var(--backgroundcolor);
+    padding: 1rem;
+    color: var(--color2);
+    font-family: var(--fontfamily);
+    font-weight: var(--normal);
+    border: 3px solid var(--accent);
+}
+
+#history iframe {
+    display: block;
+    margin: .3rem auto .3rem auto;
+    width: 85%;
+    height: 250px;
+    border: 3px solid var(--accent);
+}
+
+#weather {
+    font-family: var(--fontfamily);
+    font-weight: var(--normal);
+}
+
+#cweather,
+#fweather {
+    background-color: var(--backgroundcolor);
+    color: var(--color2);
+    border: 3px solid var(--accent);
+    text-align: center;
+    padding-bottom: .3rem;
+}
+
+#cweather {
+    margin: .3rem .1rem .1rem .3rem;
+}
+
+#fweather {
+    margin: .3rem .1rem .1rem .4rem;
+}
+
+#fweather span {
+    display: block;
+    margin: .3rem auto 0 auto;
+}
+
+/* things-to-do html main */
+
+main h1 {
+    text-align: center;
+    font-family: var(--fontfamily);
+    font-weight: var(--bold);
+    margin: 1rem 0 1rem 0;
+}
+
+#things-to-do {
+    display: grid;
+    grid-template-columns: 1fr;
+    background-color: var(--backgroundcolor);
+    padding: 2rem;
+}
+
+#things-to-do img {
+    width: 80%;
+    max-width: 310px;
+    height: 250px;
+    margin: 1rem auto 0 auto;
+    border: 3px solid var(--accent);
+
+}
+
+#things-to-do img:hover {
+    cursor: pointer;
+}
+
+#things-to-do dialog {
+    max-width: 85%;
+    border: 5px solid var(--accent);
+    background-color: var(--backgroundcolor);
+    color: var(--color1);
+}
+
+dialog h2 {
+    font-family: var(--fontfamily);
+    font-weight: var(--bold);
+}
+
+dialog p {
+    font-family: var(--fontfamily);
+    font-weight: var(--normal);
+}
+
+#closebutton::before {
+    content: "❌";
+}
+
+#closebutton {
+    border: 0;
+    cursor: pointer;
+    background: none;
+}
+
+::backdrop {
+    background-color: rgba(0, 0, 0, 0.6);
+}
+
+/* travel.html */
+
+#travel {
+    background-color: var(--backgroundcolor);
+}
+
+#travel h1 {
+    color: var(--color1);
+    padding: 2rem 0 2rem 0;
+    font-family: var(--fontfamily);
+    font-weight: var(--bold);
+}
+
+.travel-iframe {
+    width: 320px;
+    height: 300px;
+    display: block;
+    margin: 1rem auto 2rem auto;
+    border: 3px solid var(--accent);
+}
+
+
+.travel div {
+    display: block;
+    margin: 0 auto 1rem auto;
+    width: 325px;
+    border: 3px solid var(--accent);
+}
+
+.travel img {
+    display: block;
+    margin: 0 auto 0 auto;
+    border: 3px solid var(--accent);
+}
+
+.travel h3,
+.travel p {
+    text-align: center;
+    color: #F6AE2D;
+}
+
+.travel h3 {
+    font-family: var(--fontfamily);
+    font-weight: var(--bold);
+}

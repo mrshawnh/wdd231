@@ -1,0 +1,50 @@
+@media screen and (min-width: 350px) {
+
+    header img {
+        margin: 1rem auto 0 auto;
+    }
+
+    header h1 {
+        text-align: center;
+    }
+
+
+    #history {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #history iframe {
+        display: block;
+        margin: .3rem auto .3rem auto;
+        width: 85%;
+        height: 500px;
+    }
+
+    #hamburger {
+        display: none;
+    }
+
+    nav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    #weather {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #things-to-do {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        background-color: var(--backgroundcolor);
+        padding: 2rem;
+    }
+
+
+    .travel {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+}

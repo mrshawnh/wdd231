@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Project home page</title>
+    <meta name="description"
+        content="WDD 231 - Web Frontend Development I - Shawn Henrie - Tourist's Guide to Torrijos things to do grid display">
+    <meta name="author" content="Shawn Henrie">
+    <meta property="og:title" content="Tourist's Guide to Torrijos - Things to do page">
+    <meta property="og:type" content="website">
+    <meta property="og:image"
+        content="https://en.wikipedia.org/wiki/Torrijos,_Marinduque#/media/File:Ph_locator_marinduque_torrijos.png">
+    <meta property="og:url" content="https://mrshawnh.github.io/wdd231/project/things-to-do.html">
+
+    <link rel="icon" href="favicon.ico">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital@0;1&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles/normalize.css">
+    <link rel="stylesheet" href="styles/mobile.css">
+    <link rel="stylesheet" href="styles/large.css">
+
+    <script src="scripts/travel.js" defer></script>
+    <script src="scripts/weather.js" defer></script>
+</head>
+
+<body>
+    <header>
+        <img src="images/torrijos-icon.webp" alt="Torrijos Seal" loading="lazy">
+        <h1>Tourist's Guide to Torrijos</h1>
+        <button id="hamburger"></button>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="things-to-do.html">Things to do</a></li>
+                <li><a id="active" href="travel.html">Travel</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main id="travel">
+        <h1>Travel to Torrijos Marinduque </h1>
+        <iframe class="travel-iframe" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d494974.48055256665!2d120.9
+        7278422117981!3d14.253914698704031!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x3397ca03571ec38b%3A0x69d1d5
+        751069c11f!2sManila%2C%20Metro%20Manila%2C%20Philippines!3m2!1d14.5995124!2d120.9842195!4m5!1s0x33bd4b2f7d565b27%3A0x41019
+        4e6e61f49!2sDalahican%2C%20Lucena%2C%20Quezon%2C%20Philippines!3m2!1d13.908770599999999!2d121.61404759999999!5e0!3m2!1sen!2
+        sus!4v1744595114123!5m2!1sen!2sus" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <section class="travel">
+
+        </section>
+        <iframe class="travel-iframe" src="https://www.google.com/maps/embed?pb=!1m28!1m12!1m3!1d147711.17970830173!2d121.92937255762816!3d13.377842995804837
+            !2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m13!3e0!4m5!1s0x33a2d8e84415d365%3A0xf6d7fd19221bed57!2sBalanacan%2C%20Mogpog%2C%20Mar
+            induque%2C%20Philippines!3m2!1d13.528548599999999!2d121.8818764!4m5!1s0x33a31a1e5c8c9d75%3A0x14f7f0edaa3c41f9!2sTorrijos%20Munic
+            ipal%20Hall%2C%20Torrijos%2C%20Marinduque%2C%20Philippines!3m2!1d13.315018199999999!2d122.08205459999999!5e0!3m2!1sen!2sus!4v174
+            4595218622!5m2!1sen!2sus" allowfullscreen="" loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+
+        <section id="weather">
+            <div id="cweather">
+                <h3>Current Weather</h3>
+                <section>
+                    <p>The current temperature in Torrijos, Marinduque is <span id="current-temp"></span></p>
+                    <figure>
+                        <img id="weather-icon" src="" alt="">
+                        <figcaption></figcaption>
+                    </figure>
+                </section>
+            </div>
+            <div id="fweather">
+                <h3>Weather Forecast</h3>
+                <section>
+                    <span><span id="today"></span> <span id="todayWeather"></span></span>
+                    <span><span id="tomorrow"></span> <span id="tomorrowWeather"></span></span>
+                    <span><span id="nextDay"></span> <span id="nextDayWeather"></span></span>
+                </section>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>Shawn Henrie</p>
+        <p>&copy;<span id="year"></span> Tourist's Guide to Torrijos</p>
+        <span id="lastModified"></span>
+        <a href="attributions.html">Attributions</a>
+    </footer>
+</body>
+
+</html>

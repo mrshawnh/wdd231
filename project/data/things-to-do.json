@@ -1,0 +1,24 @@
+{
+    "activities": [
+        {
+            "name": "Pulang Lupa Historical Park",
+            "description": "Located in high in the mountains of Pulang Lupa, this park offers a sweeping panoramic view of the eastern seaboard of Marinduque. The bloody running gun battle between the Filipino revolutionaries led by Col Maximo Abad and the American Volunteers led by Capt. Deveraux Shields resulted in one of the very few victories won by the Filipinos over the Americans, wherein they officially admitted their loss as recorded in the American War Archives. Today an obelisk, a NHI marker and a concrete retablo marks the place.",
+            "image": "images/shrine.webp"
+        },
+        {
+            "name": "Poctoy White Beach",
+            "description": "The most accessible and the only white beach area in mainland Marinduque offers a stretch of more than a kilometer of fine white to sugar brown beach for regular local and foreign visitors. The place is complimented by available modest accommodations for overnight travelers and more than a dozen  native huts for rent. A good view of Mt. Malindig on the south from the beach area.",
+            "image": "images/beach.webp"
+        },
+        {
+            "name": "Ka Amon Cave",
+            "description": "The cave is located in Brgy. Bonliw which is less than 200 meters from the national road, a Community Based Rural Tourism program maintains and handles the daily operations of the caves. There are identified seven chambers in the cave, remnants of human skeletal remains of pre-Hispanic Filipinos can be seen near the caves entrance., immaculate flowstones abound the next chamber, fruit bats thrives in the inner most chambers. This is a cave ideal for beginners and the oldies. This cave was included in the  14th PSS National Cave Congress.",
+            "image": "images/cave.webp"
+        },
+        {
+            "name": "Moriones Festival",
+            "description": "The island is mainly Christian with many denominations that reside. Catholic, Iglesia ni Cristo, and The Church of Jesus Christ of Latter-Day Saints to name a few. During Holy Week, the entire island is known for the Moriones Festival. It is when the locals dress up as Roman Soldiers and parade around their main towns. An reenactment of Longinus, the blind soldier who punctured Jesus Christ with a spear has his vision restored from droplets of blood due to the wound.",
+            "image": "images/festival.webp"
+        }
+    ]
+}
